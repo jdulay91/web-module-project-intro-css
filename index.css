@@ -1,0 +1,30 @@
+*{
+    font-family: 'Roboto Mono', monospace;
+}
+.visit{
+    background-color: #FF764E;
+}
+
+.park{
+    background-color: #5ED3EB;
+}
+
+.involved {
+    background-color: #FFCD69;
+}
+
+main p:first-of-type{
+    font-family: 'Chelsea Market', cursive;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+main{
+    background-color: #DDB9A3 ;
+}
+
+footer{
+    background-color: #F9E7DC ;
+}
