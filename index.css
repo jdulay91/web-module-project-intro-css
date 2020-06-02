@@ -1,5 +1,7 @@
 *{
     font-family: 'Roboto Mono', monospace;
+    font-size: 62.5%;
+    width: 100%;
 }
 .visit{
     background-color: #FF764E;
@@ -13,12 +15,20 @@
     background-color: #FFCD69;
 }
 
-main p:first-of-type{
+h1{
     font-family: 'Chelsea Market', cursive;
 }
 
 .bold{
     font-weight: bold;
+}
+
+.anchor-container{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 250px;
+    width: 100%;
 }
 
 main{
@@ -27,4 +37,17 @@ main{
 
 footer{
     background-color: #F9E7DC ;
+}
+
+header{
+    width: 100%;
+}
+a {
+    color: white;
+    padding: 20px 50px;
+    text-decoration: none;
+    font-size: 2.5rem;
+    border-radius: 15%;
+    width: auto;
+    text-align: center;
 }
