@@ -158,3 +158,35 @@ a {
     object-fit: cover;
 }
 
+#bonfire:hover{
+    animation-name:fire;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes fire {
+    0%{opacity:1;}
+    10%{opacity:.9;}
+    20%{opacity:.8;}
+    30%{opacity:.7;}
+    40%{opacity:.6;}
+    50%{opacity:.5;}
+    60%{opacity:.4;}
+    70%{opacity:.3;}
+    80%{opacity:.2;}
+    100%{opacity:.1;}
+}
+
+#bus:hover{
+    bottom:15%;
+    position:absolute;
+    -webkit-animation:ease-in infinite alternate;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 5s;
+}     
+@-webkit-keyframes run {
+    0% { left: 0;}
+    50%{ left : 100%;}
+    100%{ left: 0;}
+}
