@@ -1,284 +1,222 @@
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-body {
-  line-height: 1;
-}
-ol,
-ul {
-  list-style: none;
-}
-blockquote,
-q {
-  quotes: none;
-}
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-/* end of css meyers reset */
-
-@font-face {
-  font-family: Chelsea;
-  src: url(https://fonts.google.com/specimen/Chelsea+Market);
+*{
+    font-family: 'Roboto Mono', monospace;
+    font-size: 62.5%;
+    width: 100%;
+    max-width:100%;
 }
 
-@font-face {
-  font-family: Roboto;
-  src: url(https://fonts.google.com/specimen/Roboto+Mono);
+html{
+    max-width: 100%;
 }
 
-html {
-  font-size: 62.5%;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  margin: 0 auto;
-  width: 100%;
-  max-width: 880px;
-  box-sizing: border-box;
+body{
+    max-width: 100%;
+}
+.visit{
+    background-color: #FF764E;
 }
 
-navigation {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 3rem;
+.park{
+    background-color: #5ED3EB;
 }
 
-navigation a {
-  display: block;
-  text-decoration: none;
-  border: 1px solid black;
-  border-bottom: 2px inset purple;
-  background: #FF764E;
-  color: oldlace;
-  font-size: 1.6rem;
-  text-align: center;
-  padding: 1% 2%;
-  border-radius: 5px;
-}
-.learn {
-  background: #5ED3EB;
-}
 .involved {
-  background:#FFCD69;
-}
-header {
-  display: flex;
-  justify-content: space-around;
-  max-width: 100%;
-  width: 100%;
+    background-color: #FFCD69;
 }
 
-header img {
-  border-radius: 50%;
-  width: 200px;
+h1{
+    font-family: 'Chelsea Market', cursive;
+    font-size: 6rem;
+    text-align: center;
 }
 
-header .header {
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
+main div p{
+    font-size: 3rem;
+    text-align:center;
 }
 
-h1 {
-  font-family: 'Chelsea Market', cursive;
-  font-size: 4rem;
-  font-weight: 800;
+.bold{
+    font-weight: bold;
 }
 
-h2 {
-  font-size: 1.6rem;
+.anchor-container{
+   /* display:flex;
+    justify-content: space-around;
+    align-items: center; */
+    height: 200px;
+    width: 100%;
+    max-width: 100%;
+} 
+
+main{
+    background-color: #DDB9A3 ;
+    max-width: 100%;
 }
 
-h3 {
-  font-size: 1.4rem;
+footer{
+    background-color: #F9E7DC;
+    height: 20%;
 }
 
-.header h3 {
-  width: 240px;
-  margin: 0 auto;
+header{
+    width: 100%;
+    height: 20%;
 }
 
-main {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  margin: 3rem auto;
+a {
+    color: white;
+    padding: 20px 50px;
+    text-decoration: none;
+    font-size: 2.5rem;
+    border-radius: 15%;
+    width: auto;
+    text-align: center;
+    display: inline-block;
+    margin: 0 10%;
 }
 
-.main--opening-section {
-  background:#ff9171;
-  width: 95%;
-  margin: 0 auto;
-  color: oldlace;
-  font-size: 1.4rem;
-  text-align: center;
-  padding: 1rem;
-  line-height: 18px;
-  word-spacing: 10px;
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 3rem;
+.main-flex-container{
+   /* display:flex;
+    justify-content: space-evenly;
+    align-items: center; */
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    max-width: 100%;
 }
 
-.main--opening-section p {
-  margin: 1rem auto;
+.main-image-container{
+    width: 400px;
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+    display:inline-block;
+    margin-left: 5%;
 }
 
-main section {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
+.main-text-container{
+    width: 60%;
+    height: 400px; 
+    max-width: 100%;
+    display:inline-block;
 }
 
-main img {
-  width: 100px;
-  margin: 4rem auto;
+#main-image{
+    display:inline-block;
+    margin: 0 auto;
+    height: 100%;
+    width: auto;
+    max-width: 100%;
+    
 }
 
-.fire p {
-  width: 30%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-size: 1.2rem;
-  text-decoration: none;
+.first{
+   /* display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    background-color: #DDB9A3;
+    height:300px;
+    margin: 6rem;
+    width: 92%;
+    max-width: 90%;
 }
 
-.reservations p {
-  margin: 0 auto;
-  width: 36%;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  font-size: 1.2rem;
-  text-decoration: none;
+.first p:first-of-type{
+    padding-top: 2%;
 }
 
-main a {
-  text-decoration: none;
-  color: slategrey;
-  font-weight: 800;
+.first p{
+    font-size: 2.5rem;
+    color: white;
+    text-align: center;
+    margin-top: auto auto;
 }
 
-footer img {
-  width: 100%;
-  height: 200px;
-  object-fit: none;
-  object-position: -165px 20%;
-  zoom: 65%;
+.thumbnail-container{
+    /*display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center; */
+    width:100%;
+    height:800px;
+}
+
+.thumbnail{
+    height:200px;
+    width:20%;
+    margin:0% 40%;
+    
+}
+
+.last-paragraph{
+    height: 250px;
+    width:26%;
+    margin: 0 37%;
+    /*text-align:center; */
+    font-size: 2rem;
+
+}
+
+.bold{
+    font-size: 2rem;
+}
+
+#footer-image{
+    max-height: 100%;
+    max-width: 100%;
+    width: 100%;
+    height:300px;
+    margin-top: 10%;
+    object-fit: cover;
+}
+
+footer nav{
+    padding-top: 3%;
+}
+
+#bonfire:hover{
+    animation-name:fire;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+}
+
+@keyframes fire {
+    0%{opacity:1;}
+    10%{opacity:.9;}
+    20%{opacity:.8;}
+    30%{opacity:.7;}
+    40%{opacity:.6;}
+    50%{opacity:.5;}
+    60%{opacity:.4;}
+    70%{opacity:.3;}
+    80%{opacity:.2;}
+    100%{opacity:.1;}
+}
+
+/*bus.container{
+    display:flex; 
+}*/
+#bus:hover{
+    animation-name:fire;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-timing-function: ease-in;
+    animation-duration: 5s;
+    position: relative;
+}     
+
+/*@keyframes busmoves{
+    0%{padding-right:10%;}
+    20%{padding-right:20%;}
+    40%{padding-right:30%;}
+    60%{padding-right:40%;}   
+    80%{padding-right:50%;}
+    100%{padding-right:60%;}
+}*/
+.extra{
+    height:60%;
+    width:100%;
 }
